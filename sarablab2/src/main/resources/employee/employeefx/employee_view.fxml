@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml" fx:controller="employee.employeefx.controller.EmployeeController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="12.0" prefHeight="30.0" prefWidth="1002.0" text="Employees">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="employee_table" layoutX="11.0" layoutY="47.0" prefHeight="450.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="tc_fname" editable="false" prefWidth="75.0" sortable="false" text="First Name" />
+          <TableColumn fx:id="tc_lname" editable="false" prefWidth="75.0" sortable="false" text="Last Name" />
+            <TableColumn fx:id="tc_contact" editable="false" prefWidth="75.0" sortable="false" text="Contact" />
+            <TableColumn fx:id="tc_salary" editable="false" prefWidth="75.0" sortable="false" text="Salary" />
+            <TableColumn fx:id="tc_street" editable="false" prefWidth="75.0" sortable="false" text="Street Address" />
+            <TableColumn fx:id="tc_city" editable="false" prefWidth="75.0" sortable="false" text="City" />
+            <TableColumn fx:id="tc_state" editable="false" prefWidth="75.0" sortable="false" text="State" />
+            <TableColumn fx:id="tc_zipcode" editable="false" prefWidth="75.0" sortable="false" text="Zip Code" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="f_fname" layoutX="199.0" layoutY="550.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label layoutX="15.0" layoutY="555.0" prefHeight="21.0" prefWidth="172.0" text="First Name:" />
+      <Label layoutX="525.0" layoutY="555.0" prefHeight="21.0" prefWidth="172.0" text="Last Name:" />
+      <TextField fx:id="f_lname" layoutX="709.0" layoutY="550.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField fx:id="f_salary" layoutX="709.0" layoutY="591.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label layoutX="525.0" layoutY="596.0" prefHeight="21.0" prefWidth="172.0" text="Salary:" />
+      <Label layoutX="15.0" layoutY="596.0" prefHeight="21.0" prefWidth="172.0" text="Contact:" />
+      <TextField fx:id="f_contact" layoutX="199.0" layoutY="591.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField fx:id="f_street" layoutX="199.0" layoutY="633.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label layoutX="15.0" layoutY="638.0" prefHeight="21.0" prefWidth="172.0" text="Street Address:" />
+      <Label layoutX="525.0" layoutY="638.0" prefHeight="21.0" prefWidth="172.0" text="City:" />
+      <TextField fx:id="f_city" layoutX="709.0" layoutY="633.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField fx:id="f_zipcode" layoutX="709.0" layoutY="675.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label layoutX="525.0" layoutY="680.0" prefHeight="21.0" prefWidth="172.0" text="Zip Code:" />
+      <Label layoutX="15.0" layoutY="680.0" prefHeight="21.0" prefWidth="172.0" text="State:" />
+      <TextField fx:id="f_state" layoutX="199.0" layoutY="675.0" prefHeight="30.0" prefWidth="300.0" />
+      <Button layoutX="15.0" layoutY="723.0" mnemonicParsing="false" onAction="#insertEmployee" prefHeight="31.0" prefWidth="191.0" style="-fx-background-color: green;" text="Insert" textFill="WHITE" />
+      <Button layoutX="221.0" layoutY="723.0" mnemonicParsing="false" onAction="#updateEmployee" prefHeight="31.0" prefWidth="191.0" style="-fx-background-color: blue;" text="Update" textFill="WHITE" />
+      <Label layoutX="15.0" layoutY="511.0" prefHeight="21.0" prefWidth="172.0" text="ID:" />
+      <TextField fx:id="f_id" editable="false" layoutX="199.0" layoutY="506.0" prefHeight="30.0" prefWidth="300.0" />
+      <Button layoutX="430.0" layoutY="723.0" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="31.0" prefWidth="191.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>
